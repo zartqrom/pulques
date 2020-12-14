@@ -28,7 +28,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*¿Cuál es el servicio que se desea realizar?*%0A
 		${servicio}`;
 
-  if (cliente === "" || fecha === "" || hora === "") {
+  if (cliente === "") {
     resp.classList.add("fail");
     resp.innerHTML = `Faltan algunos datos, ${cliente}`;
     return false;
